@@ -1,0 +1,38 @@
+* {
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+
+h1.main-header {
+  transform: rotate(180deg);
+  transition: transform .2s;
+  animation: rotate 1s forwards;
+}
+
+
+a.btn {
+  color: black;
+  text-decoration: none;
+  padding: 2px 8px 4px;
+  border-radius: 5px;
+  transition: transform 1s;
+  display: inline-block;
+}
+
+a.btn:hover {
+  text-decoration: underline;
+  background-color: lightseagreen;
+  color: white;
+  transform: translateX(20px);
+}
+
